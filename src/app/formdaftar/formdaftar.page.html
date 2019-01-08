@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>formdaftar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+      <ion-item>
+        <ion-input [(ngModel)]="formDaftar.name" required type="text" placeholder="Nama"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input [(ngModel)]="formDaftar.idNumb" required type="text" placeholder="No KTP"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input [(ngModel)]="formDaftar.address" required type="text" placeholder="Alamat"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input [(ngModel)]="formDaftar.mobileNumber" required type="text" placeholder="No HP"></ion-input>
+      </ion-item>
+      <ion-button color="secondary" size="full" (click)="submitRegister()">Mendaftar</ion-button>
+</ion-content>
